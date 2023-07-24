@@ -450,6 +450,30 @@ public:
       return true;
     }
 
+
+   //added by gxk 0625
+    // void saveTrajectoryToTxt()
+    // {
+    //     ofstream ofs;
+    //     string saveTrajectoryDirectory;
+    //     if(saveTrajectoryDirectory.empty()) saveTrajectoryDirectory = std::getenv("HOME") + "/lio_sam/trajectory.txt";
+    //     else saveTrajectoryDirectory = std::getenv("HOME") + saveTrajectoryDirectory;
+    //     ofs.open(saveTrajectoryDirectory.c_str());
+    //     ofs << fixed;
+    //     for (int i = 0; i < (int)cloudKeyPoses3D->size(); i++) {
+    //         double time = cloudKeyPoses3D->points[i].time;
+    //         Eigen::Quaternionf q = Eigen::Quaternionf(cloudKeyPoses6D->points[i].qx, cloudKeyPoses6D->points[i].qy, cloudKeyPoses6D->points[i].qz, cloudKeyPoses6D->points[i].qw);
+    //         Eigen::Vector3f t = Eigen::Vector3f(cloudKeyPoses6D->points[i].x, cloudKeyPoses6D->points[i].y, cloudKeyPoses6D->points[i].z);
+    //         ofs << setprecision(6) << time << " " << setprecision(9) << t(0) << " " << t(1) << " " << t(2) << " " << q.x() << " " << q.y() << " " << q.z() << " " << q.w() << endl;
+    //     }
+    //     ofs.close();
+    //     cout << "Save trajectory to " << saveTrajectoryDirectory << " completed." << endl;
+    // }
+
+
+
+    
+
     void visualizeGlobalMapThread()
     {
         ros::Rate rate(0.2);

@@ -16,7 +16,7 @@
 
     <!--- Run Rviz-->
     <include file="$(find lio_sam)/launch/include/module_rviz.launch" />
-<!--<node pkg="tf" type="static_transform_publisher" name="map_to_base_link" args="0.065 0.0 0.245 1.57 0.0 0.0 /map /base_link 50" />
-<node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0.065 0.0 0.245 1.57 0.0 0.0 /map /odom 50" />
-<node pkg="tf" type="static_transform_publisher" name="odom_to_lidar_link" args="0.000 0.0 0.245 1.57 0.0 0.0 /odom /lidar_link 50" />-->
+<!--<node pkg="tf" type="static_transform_publisher" name="map_to_base_link" args="0.065 0.0 0.245 1.13 0.0 0.0 /map /base_link 50" />
+<node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0.065 0.0 0.245 1.13 0.0 0.0 /map /odom 50" />
+<node pkg="tf" type="static_transform_publisher" name="odom_to_lidar_link" args="0.000 0.0 0.245 1.13 0.0 0.0 /odom /lidar_link 50" />-->
 </launch>
